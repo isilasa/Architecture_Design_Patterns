@@ -5,3 +5,5 @@
 /.vs
 /HomeWork/bin/Debug/net8.0
 /HomeWork/obj
+/HomeWork.Test/bin/Debug/net8.0
+/HomeWork.Test/obj
