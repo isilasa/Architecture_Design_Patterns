@@ -7,6 +7,11 @@ namespace HomeWork.Handlers.RepeatTwice
         private static readonly Dictionary<Type, int> _commandCounter;
         private readonly ICommand _command;
 
+        public RepeatTwiceCommand(ICommand command)
+        {
+            _command = command ?? throw new ArgumentNullException(nameof(command));
+        }
+
         static RepeatTwiceCommand()
         {
             _commandCounter = new Dictionary<Type, int>();
